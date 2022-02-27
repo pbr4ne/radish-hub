@@ -13,7 +13,7 @@
       <h1 style="font-family: 'Shizuru', cursive; font-size: 100px" id="radish"></h1>
     </div>
     <script>
-      fetch('http://localhost:3000')
+      fetch('https://radish-hub.herokuapp.com/')
         .then(response => response.json())
         .then(data => document.getElementById("radish").innerHTML = data.radish);
     </script> 
