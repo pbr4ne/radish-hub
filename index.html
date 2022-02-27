@@ -10,7 +10,12 @@
   </head>
   <body>
     <div>
-      <h1 style="font-family: 'Shizuru', cursive; font-size: 100px">DELICIOUS</h1>
+      <h1 style="font-family: 'Shizuru', cursive; font-size: 100px" id="radish"></h1>
     </div>
+    <script>
+      fetch('http://localhost:3000')
+        .then(response => response.json())
+        .then(data => document.getElementById("radish").innerHTML = data.radish);
+    </script> 
   </body>
 </html>
